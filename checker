@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Checker script started..."
+echo "Checking HTML/CSS structure..."
+# Simulate checker (you can update this with real logic later)
+ls -R
+echo "Checker completed."
