@@ -1,29 +1,26 @@
-/* Reset default margin/padding */
-* {
+/* Reset some default styles */
+body, h1, p, ul {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
 }
 
-/* Header styling */
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  padding: 0 40px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
 }
 
 nav ul {
@@ -33,77 +30,43 @@ nav ul {
 }
 
 nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
 }
 
-/* Banner section */
+/* Banner styles */
 .banner {
-  background-image: url("images/banner.jpg");
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpg");
+  background-size: 100% 100%; /* Stretched */
   background-position: center;
-  color: white;
-  height: 500px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Helps text pop */
 }
-
-.banner h1 {
-  font-size: 48px;
+.banner p {
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
-.banner p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
 .banner button {
-  padding: 12px 24px;
-  background-color: #61dafb;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
+  background-color: #ff6347;
+  border: none;
+  color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .banner button:hover {
-  background-color: #21a1f1;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-/* Navigation styles */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: bold;
-}
-
-/* Section titles */
-section h2 {
-  color: #2c3e50;
-  text-align: center;
-}
-
-/* Footer styles */
-footer {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 10px;
+  background-color: #ff4500;
 }
