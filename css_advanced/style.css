@@ -152,3 +152,40 @@ nav a {
   margin-top: 10px;
   color: #555;
 }
+/* Membership Section */
+.membership {
+  background-color: #fef3e2;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  color: #e65100;
+  margin-bottom: 20px;
+}
+
+.membership p {
+  font-size: 1.2rem;
+  color: #4e342e;
+  margin-bottom: 30px;
+}
+
+.join-btn {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #f57c00;
+}
